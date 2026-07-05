@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FilterCoffee 지원</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9f7;
+    --card: #ffffff;
+    --text: #1c1c1e;
+    --secondary: #6e6e73;
+    --accent: #c47a1a;
+    --border: #e8e5df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f2f2f7;
+      --secondary: #98989e;
+      --accent: #f5a623;
+      --border: #2c2c2e;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    padding: 48px 20px 80px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .tagline { color: var(--secondary); margin-bottom: 36px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { color: var(--secondary); font-size: 0.95rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 48px; color: var(--secondary); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>FilterCoffee</h1>
+  <p class="tagline">핸드드립의 모든 기록 — 원두부터 레시피, 추출, 평가까지.</p>
+
+  <div class="card">
+    <h2>문의 / 피드백</h2>
+    <p>사용 중 문제나 제안이 있으면 메일로 보내주세요.<br>
+    <a href="mailto:mainstudio.dev@icloud.com">mainstudio.dev@icloud.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>개인정보</h2>
+    <p>FilterCoffee는 어떤 개인정보도 수집하지 않습니다. 모든 데이터는 사용자의 기기와 iCloud에만 저장됩니다.<br>
+    <a href="privacy.html">개인정보 처리방침 보기</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 FilterCoffee</p>
+  </footer>
+</main>
+</body>
+</html>
